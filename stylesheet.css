@@ -1,0 +1,148 @@
+.page { 
+  padding-left: 10%;
+  padding-right: 10%;
+  align-content: center;
+
+}
+body {    
+  font-family: 'Poppins';font-size: 18px;
+  padding-top: 10px;
+}
+
+#writing {    
+  margin: auto;
+  text-align: center;
+  padding-block: 50px;
+}
+.landing { 
+  padding-bottom: 5px;
+  display:flex;
+  border-bottom: 1px solid #e7f3e9;
+}
+.hello {
+  flex:1;
+  width: 60%; 
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+@media (max-width: 400px) {
+  .landing {
+    display: block;
+  }
+}
+#me {    
+  border-radius: 80%;
+  width: 250px;
+  height: auto;
+  
+  
+}
+#h33 {    
+ color:#459853;
+}  
+.bio {    
+   padding-block: 15px;
+   
+}
+
+
+.end{    
+  text-align: center;
+  border-top: 1px solid #e7f3e9;
+}
+
+/* Flexbox img grid */
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #e7f3e9;
+    color: #04AA6D;;
+    border-radius: 25px;
+  }
+  .navbar a.button {
+    background-color: white;
+    color: black;
+    border: 1px solid #04AA6D; 
+    border-radius: 25px;
+
+  }
+  /* Active/current link */
+  .navbar a.active {
+    float: left;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
